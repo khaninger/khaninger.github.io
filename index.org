@@ -21,14 +21,13 @@ I co-founded [[https://abilityhacks.org][AbilityHacks]] and [[https://enabletech
 
 [[./causal_desires.html][Causal Desires]] [17.08.2020]
 
-
 ** Miscellaneous Projects
 
 - Dual Leslie :: The Leslie speaker realizes a sort of tremelo effect mechanically via a downwards-facing speaker and a rotating baffle which directionally projects this sound. I was interested in the effect of having two such speakers at different speeds (and possibly, different spatial locations), and built two simple ones to test. The rotational speeds of each drum and the relative volume of each can be controlled via knobs. 
 
 #+HTML: <div align="center"><iframe width="480" height="270" src="https://www.youtube.com/embed/sYa7oHKL-WQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
-- Optimal downhill bicycling :: When biking downhill towards a stoplight, should one stop at the top until a green light? Or only brake as necessary to not run the light? This problem is formalized and solved as an optimal control problem. When the time of switch to green light is known, braking should be done as early as possible - leaving more potential energy to be harvested when the light turns green. 
+- Optimal downhill bicycling :: When biking downhill towards a stoplight, should one stop at the top until a green light? Or only brake as necessary to not run the light? This problem is formalized and solved as an optimal control problem. When the time of switch to green light is known, braking should be done as early as possible - leaving more potential energy to be harvested when the light turns green. Derivation [[file:images/bike_coasting_derivation.pdf][here (PDF)]]. 
 
 #+ATTR_HTML: :width 480
 [[file:images/bike_coasting.png]]
@@ -48,5 +47,5 @@ I co-founded [[https://abilityhacks.org][AbilityHacks]] and [[https://enabletech
 
 - Mechanical Flower :: Flower which opens/closes at the push of a lever, made from two aluminum cans, bike brake cable, fishing line. 
 #+ATTR_HTML: :width 480
-[[file:images/flower.jpg]]
+[[file:images/flower.JPG]]
 
