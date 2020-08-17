@@ -1,0 +1,41 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css">
+#+OPTIONS: num:nil toc:nil html-postamble:nil
+
+#+TITLE: Causal Desires
+
+#+HTML: <q> To model is human; to model causally, divine </q>
+
+"Why?" - the simple question beloved by children, philosphers, journalists alike, echoing from schoolyard to courtroom. It belies a basic human need: effect should have cause, preferably one we understand and is compatible with our undestanding of the world.
+
+"Why" is, however, not an easy question to answer. Aristotle, though not the first, identified four kinds of causes and their interrelations. Today; undergraduates are drilled with correlation =/= causation. In Pearl's work on causal calculus and reasoning, the formalization of causality reaches the modern peak [fn:1]. Ultimately, the conclusion if one thing causes another rests on their statistical properties as well as assumptions provided by the model-maker - that all the related factors have been identified and properly considered. 
+
+Though an excellent and thorough work, the principle concern of Pearl is singleton decision making, i.e. non-sequential [fn:2]. Many of the decisions that we make in daily life - whether we do something special for our loved ones, what we make for dinner, whether we go exercise - are repetitive, where the action we take affects the world, and the world, in turn, affects us. If our reasoned actions are informed by some model of what will happen in response, this model rests on an assumed causality: action -> response. However, the causality of action -> response can be incomplete, leaving us with a limited understanding of the world and impacting our decision making. 
+
+A principled study of causality as a property of human understanding allows us to examine it as a human-caused phenomena: reason on its origins, its impact on human behavior, and judge its fitness for the aims to which it is being applied.
+
+Consider causality inversions - where the effect is presented as a cause - as a form of exploring the limitations of a simple model. The self-fullfilling prophecy is causality inversion, instead of being a prediction of the future, it becomes the cause of the future. Actually, this sort of causality inversion shows up often, and seems to enjoy a degree of popularity. 
+
+[fn:1] Pearl and Mackenzie, 'The Book of Why: The New Science of Cause and Effect', a number of shorter introductions [[https://www.inference.vc/untitled/][available]].
+[fn:2] Although the causal graph can be extended to consider a time series, this is decidedly not the focus of the text. 
+
+
+** Love
+Typical model: Love -> loving behavior
+The typical folk wisdom is that love causes loving actions, whereas the experiences we assosciate with love - warmth, acceptance, growth - could also be productively viewed as resulting from loving actions [fn:3].
+
+The common western model of loving feelings and loving actions is that the feelings cause the actions - you buy your partner their favorite chocolate because you love them.  However, the argument has been made that our feelings of love rather emerge and are reinforced by expressions of love - that we inhabit our expressions. 
+
+[fn:3] Nussbaum, "Love and the Individual: Romantic Rightness and Platonic Aspiration"
+
+** Eternal salvation
+Typical model: Good actions -> eternal salvation
+
+The Puritans, especially Calvinists, typically espouse a form of predestination: that one does not choose salvation or whether to accept God's grace: 'the priveledge of choice is God's alone'. Good behavior *results* from being elected for salvation, but does not *cause* it.
+
+This flips the typical assumed relation of human behavior and salvation. 
+
+How does such a viewpoint affect the person who holds it? Someone contemplating an action which is, by their judgement, 'not good', and weighing this action with its expected outcomes against the eternal salvation of their soul, it seems that predestination would lend the impact of an action on their salvation moot: salvation is fixed. This is naturally addressed with the inversion, rather than absolution of causality. This leaves the question for an individual whether they are elect or not - a question on which natural, albeit condemned, human impulses weigh heavily.
+
+Beyond individuals, such a belief knits tightly with a belief in 'the elect' - not just an individual which is predestined; but a group of them, which can be readily identified by their good and holy behavior. 
+
+

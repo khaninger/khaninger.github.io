@@ -11,8 +11,10 @@ body {
   line-height: 1.6rem;
   padding: 2rem;
   margin: auto;
-  max-width: 75rem; }
+  max-width: 65rem; }
 
+.title {
+    text-align: left; }
 .fulltext {
   margin: auto;
   max-width: 50rem; }

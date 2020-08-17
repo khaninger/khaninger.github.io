@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-08-17 Mon 16:12 -->
+<!-- 2020-08-17 Mon 16:29 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kevin Haninger</title>
+<title>Causal Desires</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -229,80 +229,61 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Kevin Haninger</h1>
+<h1 class="title">Causal Desires</h1>
+<q> To model is human; to model causally, divine </q>
+
 <p>
-I am a robotics and controls researcher working on the design and control of compliant robots in manipulation and human-robot interaction. 
+"Why?" - arguably the most human of possible questions; beloved by children, philosphers, journalists, echoing through schoolyard playgrounds and courtrooms alike. We like effects to have a cause; that our perceptions are of the mechanistic unfolding of a deterministic world, a collection of facts slowly unfolding and being made, is uncomfortable. Making decisions - although undoubtedly not ruled by an impartial cost/benefit calculus - makes use of an expectation of how an action or state of things will lead to a certain outcome. In other words; a model. And dynamic models have a causality - the world flows from a set of causes to a set of effects. 
 </p>
 
 <p>
-I am currently affiliated with Fraunhofer IPK in Berlin. I've previously worked at Franka Emika in Munich, Space Sciences Lab in Berkeley, Space Robotics Lab in Sendai, and consulted for Gate Labs in San Francisco.
+Causality is, however, a property of a model and can be most productively viewed as a consequence (or cause, thanks Kant) of how we understand the world around us. It's artifice need not be bad; but should be examined along the broader goals of the model it informs. These models (formal or otherwise), inform human decision making, design, and thus the constructed world around us. They define what we think possible and the means by which we map desired outcomes onto current action. 
 </p>
 
 <p>
-My academic training is in Mechanical Engineering; I completed my Ph.D. at UC Berkeley in 2016 under the supervision of Professor Masayoshi Tomizuka. I earned my M.S. and B.S. at UC Berkeley in 2015 and 2012 respectively, with a minor in Electrical Engineering. 
+At the same time, it seems that we have an impulse, a call to causality. We want things to make sense. We want the simple story that drapes over our existing way of understanding. We want effects to have a cause. And we also enjoy playful perversions of causality - self-fulfilling prophecies, where the effects induce the cause. 
 </p>
 
 <p>
-I co-founded <a href="https://abilityhacks.org">AbilityHacks</a> and <a href="https://enabletech.berkeley.edu">EnableTech</a> with Francisco Peralta and Anderew McPherson, volunteer organizations to support DIY assistive technologies for people with disabilities. 
+A principled study of causality as a property of human understanding allows us to examine it as a human-caused phenomena: reason on its origins, its impact on human behavior, and judge its fitness for the aims to which it is being applied.
+</p>
+
+<div id="outline-container-org7558bf2" class="outline-2">
+<h2 id="org7558bf2">Good actions -&gt; eternal salvation</h2>
+<div class="outline-text-2" id="text-org7558bf2">
+<p>
+A key distinguishing belief of Puritans, especially Calvinists, is predestination - that the one does not choose salvation or whether to accept God's grace: 'the priveledge of choice is God's alone'. Good behavior <b>results</b> from being elected for salvation, but does not <b>cause</b> it.
 </p>
 
 <p>
-<a href="mailto:khaninger@gmail.com">Emails welcome at khaninger@gmail.com</a>
+This flips the typical assumed relation of human behavior and salvation (i.e. certain approved actions and intents cause salvation). 
 </p>
 
 <p>
-<a href="https://scholar.google.com/citations?hl=en&amp;user=FyJgrvYAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Publications via Google Scholar</a>
+How does such a viewpoint affect the person who holds it (alternatively, what disposes one to hold such a belief)? For one contemplating an action which is, by their judgement, 'not good', and weighing this action with its expected outcomes against the eternal salvation of their soul, it seems that predestination would lend the impact of an action on their salvation moot: salvation is fixed. This is naturally addressed with the inversion, rather than absolution of causality. This leaves the question for an individual whether they are elect or not - a question on which natural, albeit condemned, human impulses weigh heavily.
 </p>
 
-<div id="outline-container-orga3ac03c" class="outline-2">
-<h2 id="orga3ac03c">Miscellaneous Projects</h2>
-<div class="outline-text-2" id="text-orga3ac03c">
-<dl class="org-dl">
-<dt>Dual Leslie</dt><dd>The Leslie speaker realizes a sort of tremelo effect mechanically via a downwards-facing speaker and a rotating baffle which directionally projects this sound. I was interested in the effect of having two such speakers at different speeds (and possibly, different spatial locations), and built two simple ones to test. The rotational speeds of each drum and the relative volume of each can be controlled via knobs.</dd>
-</dl>
-
-<div align="center"><iframe width="480" height="270" src="https://www.youtube.com/embed/sYa7oHKL-WQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-<dl class="org-dl">
-<dt>Optimal downhill bicycling</dt><dd>When biking downhill towards a stoplight, should one stop at the top until a green light? Or only brake as necessary to not run the light? This problem is formalized and solved as an optimal control problem. When the time of switch to green light is known, braking should be done as early as possible - leaving more potential energy to be harvested when the light turns green.</dd>
-</dl>
-
-
-<div class="figure">
-<p><img src="images/bike_coasting.png" alt="bike_coasting.png" width="480" />
+<p>
+Beyond individuals, such a belief knits tightly with a belief in 'the elect' - not just an individual which is predestined; but a group of them, which can be readily identified by their good and holy behavior. 
 </p>
 </div>
-
-<dl class="org-dl">
-<dt>Trash</dt><dd>Re-use plastic produce bags for organic waste, lid to mange odor/flys and can be operated with hands full of scraps. Macrame courtesy of the talented Mrs. Cassie Seo.</dd>
-</dl>
-
-<div align="center"><iframe width="480" height="270" src="https://www.youtube.com/embed/0ES0h26bpVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-
-<dl class="org-dl">
-<dt>Sous-vide Controller</dt><dd>Toggle the power for a rice cooker to regulate temperature to set-point, thus holding a water bath at a specific temperature for controlled cooking. The control is simple bang-bang control, but large delay between actuator (heating element on bottom of pan) and sensing (temperature probe in water) required some cheap derivative control - changing control action when approaching the set-point.</dd>
-</dl>
-
-<div class="figure">
-<p><img src="images/sous_vide.jpg" alt="sous_vide.jpg" width="480" />
-</p>
 </div>
 
-<dl class="org-dl">
-<dt>Diving Dolphins</dt><dd>Gift for my sister; two four-bar linkages. Paint courtesy of the talented Mrs. Cassie Seo.</dd>
-</dl>
 
-<div align="center"><iframe width="480" height="270" src="https://www.youtube.com/embed/F_dpSJXfcpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe></div>
-
-<dl class="org-dl">
-<dt>Mechanical Flower</dt><dd>Flower which opens/closes at the push of a lever, made from two aluminum cans, bike brake cable, fishing line.</dd>
-</dl>
-
-<div class="figure">
-<p><img src="images/flower.jpg" alt="flower.jpg" width="480" />
+<div id="outline-container-org46fdb57" class="outline-2">
+<h2 id="org46fdb57">Love -&gt; loving behavior (e.g. Nussbaum, "Love and the Individual: Romantic Rightness and Platonic Aspiration")</h2>
+<div class="outline-text-2" id="text-org46fdb57">
+<p>
+Intellect 'imposes an illusory sense of order on the entropy of emotions', the common narrative is that love causes loving actions, whereas the experiences we assosciate with love - warmth, acceptance, growth - could also be productively viewed as resulting from loving actions.
 </p>
-</div>
+
+<p>
+The common western model of loving feelings and loving actions is that the feelings cause the actions - you buy your partner their favorite chocolate because you love them.  However, the argument has been made that our feelings of love rather emerge and are reinforced by expressions of love - that we inhabit our expressions. 
+</p>
+
+<p>
+These two causalities can be studied on two parties engaged in a loving relationship. Here, the recipient of a loving action is typically affected by the expression itself, as well as the percieved intent, that someone cared. In this viewpoint, the accepted causality is more rewarding - if a causes b, it's easy to think b implies a.
+</p>
 </div>
 </div>
 </div>

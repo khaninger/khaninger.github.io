@@ -3,7 +3,7 @@
 #+TITLE: Kevin Haninger
 #+OPTIONS: num:nil toc:nil html-postamble:nil
 
-I am a robotics and controls researcher working on control of compliant robots in manipulation and human-robot interaction. 
+I am a robotics and controls researcher working on the design and control of compliant robots in manipulation and human-robot interaction. 
 
 I am currently affiliated with Fraunhofer IPK in Berlin. I've previously worked at Franka Emika in Munich, Space Sciences Lab in Berkeley, Space Robotics Lab in Sendai, and consulted for Gate Labs in San Francisco.
 
@@ -13,9 +13,16 @@ I co-founded [[https://abilityhacks.org][AbilityHacks]] and [[https://enabletech
 
 [[mailto:khaninger@gmail.com][Emails welcome at khaninger@gmail.com]]
 
-[[https://scholar.google.com/citations?hl=en&user=FyJgrvYAAAAJ&view_op=list_works&sortby=pubdate][Publications via Google Scholar]]
+** Publications
 
-* Miscellaneous Projects
+[[https://scholar.google.com/citations?hl=en&user=FyJgrvYAAAAJ&view_op=list_works&sortby=pubdate][via Google Scholar
+]]
+** Blog
+
+[[./causal_desires.html][Causal Desires]] [17.08.2020]
+
+
+** Miscellaneous Projects
 
 - Dual Leslie :: The Leslie speaker realizes a sort of tremelo effect mechanically via a downwards-facing speaker and a rotating baffle which directionally projects this sound. I was interested in the effect of having two such speakers at different speeds (and possibly, different spatial locations), and built two simple ones to test. The rotational speeds of each drum and the relative volume of each can be controlled via knobs. 
 

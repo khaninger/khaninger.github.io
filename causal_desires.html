@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-08-17 Mon 16:12 -->
+<!-- 2020-08-17 Mon 17:28 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kevin Haninger</title>
+<title>Causal Desires</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -229,82 +229,85 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Kevin Haninger</h1>
-<p>
-I am a robotics and controls researcher working on the design and control of compliant robots in manipulation and human-robot interaction. 
-</p>
+<h1 class="title">Causal Desires</h1>
+<q> To model is human; to model causally, divine </q>
 
 <p>
-I am currently affiliated with Fraunhofer IPK in Berlin. I've previously worked at Franka Emika in Munich, Space Sciences Lab in Berkeley, Space Robotics Lab in Sendai, and consulted for Gate Labs in San Francisco.
+"Why?" - the simple question beloved by children, philosphers, journalists alike, echoing from schoolyard to courtroom. It belies a basic human need: effect should have cause, preferably one we understand and is compatible with our undestanding of the world.
 </p>
 
 <p>
-My academic training is in Mechanical Engineering; I completed my Ph.D. at UC Berkeley in 2016 under the supervision of Professor Masayoshi Tomizuka. I earned my M.S. and B.S. at UC Berkeley in 2015 and 2012 respectively, with a minor in Electrical Engineering. 
+"Why" is, however, not an easy question to answer. Aristotle, though not the first, identified four kinds of causes and their interrelations. Today; undergraduates are drilled with correlation <code>/</code> causation. In Pearl's work on causal calculus and reasoning, the formalization of causality reaches the modern peak <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. Ultimately, the conclusion if one thing causes another rests on their statistical properties as well as assumptions provided by the model-maker - that all the related factors have been identified and properly considered. 
 </p>
 
 <p>
-I co-founded <a href="https://abilityhacks.org">AbilityHacks</a> and <a href="https://enabletech.berkeley.edu">EnableTech</a> with Francisco Peralta and Anderew McPherson, volunteer organizations to support DIY assistive technologies for people with disabilities. 
+Though an excellent and thorough work, the principle concern of Pearl is singleton decision making, i.e. non-sequential <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>. Many of the decisions that we make in daily life - whether we do something special for our loved ones, what we make for dinner, whether we go exercise - are repetitive, where the action we take affects the world, and the world, in turn, affects us. If our reasoned actions are informed by some model of what will happen in response, this model rests on an assumed causality: action -&gt; response. However, the causality of action -&gt; response can be incomplete, leaving us with a limited understanding of the world and impacting our decision making. 
 </p>
 
 <p>
-<a href="mailto:khaninger@gmail.com">Emails welcome at khaninger@gmail.com</a>
+A principled study of causality as a property of human understanding allows us to examine it as a human-caused phenomena: reason on its origins, its impact on human behavior, and judge its fitness for the aims to which it is being applied.
 </p>
 
 <p>
-<a href="https://scholar.google.com/citations?hl=en&amp;user=FyJgrvYAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Publications via Google Scholar</a>
+Consider causality inversions - where the effect is presented as a cause - as a form of exploring the limitations of a simple model. The self-fullfilling prophecy is causality inversion, instead of being a prediction of the future, it becomes the cause of the future. Actually, this sort of causality inversion shows up often, and seems to enjoy a degree of popularity. 
 </p>
 
-<div id="outline-container-orga3ac03c" class="outline-2">
-<h2 id="orga3ac03c">Miscellaneous Projects</h2>
-<div class="outline-text-2" id="text-orga3ac03c">
-<dl class="org-dl">
-<dt>Dual Leslie</dt><dd>The Leslie speaker realizes a sort of tremelo effect mechanically via a downwards-facing speaker and a rotating baffle which directionally projects this sound. I was interested in the effect of having two such speakers at different speeds (and possibly, different spatial locations), and built two simple ones to test. The rotational speeds of each drum and the relative volume of each can be controlled via knobs.</dd>
-</dl>
-
-<div align="center"><iframe width="480" height="270" src="https://www.youtube.com/embed/sYa7oHKL-WQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-<dl class="org-dl">
-<dt>Optimal downhill bicycling</dt><dd>When biking downhill towards a stoplight, should one stop at the top until a green light? Or only brake as necessary to not run the light? This problem is formalized and solved as an optimal control problem. When the time of switch to green light is known, braking should be done as early as possible - leaving more potential energy to be harvested when the light turns green.</dd>
-</dl>
-
-
-<div class="figure">
-<p><img src="images/bike_coasting.png" alt="bike_coasting.png" width="480" />
+<div id="outline-container-org79dd10d" class="outline-2">
+<h2 id="org79dd10d">Love</h2>
+<div class="outline-text-2" id="text-org79dd10d">
+<p>
+Typical model: Love -&gt; loving behavior
+The typical folk wisdom is that love causes loving actions, whereas the experiences we assosciate with love - warmth, acceptance, growth - could also be productively viewed as resulting from loving actions <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>.
 </p>
-</div>
 
-<dl class="org-dl">
-<dt>Trash</dt><dd>Re-use plastic produce bags for organic waste, lid to mange odor/flys and can be operated with hands full of scraps. Macrame courtesy of the talented Mrs. Cassie Seo.</dd>
-</dl>
-
-<div align="center"><iframe width="480" height="270" src="https://www.youtube.com/embed/0ES0h26bpVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-
-
-<dl class="org-dl">
-<dt>Sous-vide Controller</dt><dd>Toggle the power for a rice cooker to regulate temperature to set-point, thus holding a water bath at a specific temperature for controlled cooking. The control is simple bang-bang control, but large delay between actuator (heating element on bottom of pan) and sensing (temperature probe in water) required some cheap derivative control - changing control action when approaching the set-point.</dd>
-</dl>
-
-<div class="figure">
-<p><img src="images/sous_vide.jpg" alt="sous_vide.jpg" width="480" />
-</p>
-</div>
-
-<dl class="org-dl">
-<dt>Diving Dolphins</dt><dd>Gift for my sister; two four-bar linkages. Paint courtesy of the talented Mrs. Cassie Seo.</dd>
-</dl>
-
-<div align="center"><iframe width="480" height="270" src="https://www.youtube.com/embed/F_dpSJXfcpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe></div>
-
-<dl class="org-dl">
-<dt>Mechanical Flower</dt><dd>Flower which opens/closes at the push of a lever, made from two aluminum cans, bike brake cable, fishing line.</dd>
-</dl>
-
-<div class="figure">
-<p><img src="images/flower.jpg" alt="flower.jpg" width="480" />
+<p>
+The common western model of loving feelings and loving actions is that the feelings cause the actions - you buy your partner their favorite chocolate because you love them.  However, the argument has been made that our feelings of love rather emerge and are reinforced by expressions of love - that we inhabit our expressions. 
 </p>
 </div>
 </div>
+
+<div id="outline-container-orgbdb782b" class="outline-2">
+<h2 id="orgbdb782b">Eternal salvation</h2>
+<div class="outline-text-2" id="text-orgbdb782b">
+<p>
+Typical model: Good actions -&gt; eternal salvation
+</p>
+
+<p>
+The Puritans, especially Calvinists, typically espouse a form of predestination: that one does not choose salvation or whether to accept God's grace: 'the priveledge of choice is God's alone'. Good behavior <b>results</b> from being elected for salvation, but does not <b>cause</b> it.
+</p>
+
+<p>
+This flips the typical assumed relation of human behavior and salvation. 
+</p>
+
+<p>
+How does such a viewpoint affect the person who holds it? Someone contemplating an action which is, by their judgement, 'not good', and weighing this action with its expected outcomes against the eternal salvation of their soul, it seems that predestination would lend the impact of an action on their salvation moot: salvation is fixed. This is naturally addressed with the inversion, rather than absolution of causality. This leaves the question for an individual whether they are elect or not - a question on which natural, albeit condemned, human impulses weigh heavily.
+</p>
+
+<p>
+Beyond individuals, such a belief knits tightly with a belief in 'the elect' - not just an individual which is predestined; but a group of them, which can be readily identified by their good and holy behavior. 
+</p>
 </div>
 </div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+Pearl and Mackenzie, 'The Book of Why: The New Science of Cause and Effect', a number of shorter introductions <a href="https://www.inference.vc/untitled/">available</a>.
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
+Although the causal graph can be extended to consider a time series, this is decidedly not the focus of the text. 
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3">3</a></sup> <div class="footpara"><p class="footpara">
+Nussbaum, "Love and the Individual: Romantic Rightness and Platonic Aspiration"
+</p></div></div>
+
+
+</div>
+</div></div>
 </body>
 </html>
