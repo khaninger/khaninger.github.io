@@ -1,0 +1,45 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css">
+
+#+TITLE: Kevin Haninger
+#+OPTIONS: num:nil toc:nil html-postamble:nil
+
+I am a robotics and controls researcher working on control of compliant robots in manipulation and human-robot interaction. 
+
+I am currently affiliated with Fraunhofer IPK in Berlin. I've previously worked at Franka Emika in Munich, Space Sciences Lab in Berkeley, Space Robotics Lab in Sendai, and consulted for Gate Labs in San Francisco.
+
+My academic training is in Mechanical Engineering; I completed my Ph.D. at UC Berkeley in 2016 under the supervision of Professor Masayoshi Tomizuka. I earned my M.S. and B.S. at UC Berkeley in 2015 and 2012 respectively, with a minor in Electrical Engineering. 
+
+I co-founded [[https://abilityhacks.org][AbilityHacks]] and [[https://enabletech.berkeley.edu][EnableTech]] with Francisco Peralta and Anderew McPherson, volunteer organizations to support DIY assistive technologies for people with disabilities. 
+
+[[mailto:khaninger@gmail.com][Emails welcome at khaninger@gmail.com]]
+
+[[https://scholar.google.com/citations?hl=en&user=FyJgrvYAAAAJ&view_op=list_works&sortby=pubdate][Publications via Google Scholar]]
+
+* Miscellaneous Projects
+
+- Dual Leslie :: The Leslie speaker realizes a sort of tremelo effect mechanically via a downwards-facing speaker and a rotating baffle which directionally projects this sound. I was interested in the effect of having two such speakers at different speeds (and possibly, different spatial locations), and built two simple ones to test. The rotational speeds of each drum and the relative volume of each can be controlled via knobs. 
+
+#+HTML: <div align="center"><iframe width="480" height="270" src="https://www.youtube.com/embed/sYa7oHKL-WQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+- Optimal downhill bicycling :: When biking downhill towards a stoplight, should one stop at the top until a green light? Or only brake as necessary to not run the light? This problem is formalized and solved as an optimal control problem. When the time of switch to green light is known, braking should be done as early as possible - leaving more potential energy to be harvested when the light turns green. 
+
+#+ATTR_HTML: :width 480
+[[file:images/bike_coasting.png]]
+
+- Trash :: Re-use plastic produce bags for organic waste, lid to mange odor/flys and can be operated with hands full of scraps. Macrame courtesy of the talented Mrs. Cassie Seo. 
+
+#+HTML: <div align="center"><iframe width="480" height="270" src="https://www.youtube.com/embed/0ES0h26bpVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+
+- Sous-vide Controller :: Toggle the power for a rice cooker to regulate temperature to set-point, thus holding a water bath at a specific temperature for controlled cooking. The control is simple bang-bang control, but large delay between actuator (heating element on bottom of pan) and sensing (temperature probe in water) required some cheap derivative control - changing control action when approaching the set-point. 
+#+ATTR_HTML: :width 480
+[[file:images/sous_vide.jpg]]
+
+- Diving Dolphins :: Gift for my sister; two four-bar linkages. Paint courtesy of the talented Mrs. Cassie Seo. 
+
+#+HTML: <div align="center"><iframe width="480" height="270" src="https://www.youtube.com/embed/F_dpSJXfcpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="center"></iframe></div>
+
+- Mechanical Flower :: Flower which opens/closes at the push of a lever, made from two aluminum cans, bike brake cable, fishing line. 
+#+ATTR_HTML: :width 480
+[[file:images/flower.jpg]]
+

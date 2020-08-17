@@ -9,9 +9,7 @@ body {
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   line-height: 1.6rem;
-  padding: 2rem;
-  margin: auto;
-  max-width: 75rem; }
+  padding: 2rem; }
 
 .fulltext {
   margin: auto;
