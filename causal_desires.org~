@@ -18,7 +18,6 @@ Consider causality inversions - where the effect is presented as a cause - as a 
 [fn:1] Pearl and Mackenzie, 'The Book of Why: The New Science of Cause and Effect', a number of shorter introductions [[https://www.inference.vc/untitled/][available]].
 [fn:2] Although the causal graph can be extended to consider a time series, this is decidedly not the focus of the text. 
 
-
 ** Love
 Typical model: Love -> loving behavior
 The typical folk wisdom is that love causes loving actions, whereas the experiences we assosciate with love - warmth, acceptance, growth - could also be productively viewed as resulting from loving actions [fn:3].
