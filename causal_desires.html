@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-08-18 Tue 13:42 -->
+<!-- 2021-03-02 Tue 15:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Causal Desires</title>
@@ -39,7 +39,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -160,6 +160,19 @@
   .footdef  { margin-bottom: 1em; }
   .figure { padding: 1em; }
   .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
   .inlinetask {
     padding: 10px;
     border: 2px solid gray;
@@ -185,7 +198,7 @@
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -230,51 +243,72 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">Causal Desires</h1>
-<q> To model is human; to model causally, divine </q>
+<q> To model is human; causally, divine </q>
 
 <p>
-"Why?" - the perennial question beloved by children, philosphers, journalists alike; echoing from schoolyard to courtroom. It belies a basic human desire: effect should have cause, preferably one compatible with our undestanding of the world.
+"Why?" is a question we can't help asking when we feel wronged, surprised, or just plain curious. Knowing 'why' speaks of understanding, the ability to predict when it would happen again and, if needed, change that. We hunger for sensible stories, where causes proceed predictable to effects.
 </p>
 
 <p>
-"Why" is, however, not an easy question to answer. Aristotle named four kinds of causes and explored their relations, among each other and with effect. Today, undergraduates dutifully learn that correlation is not causation. In Pearl's work on causal calculus and reasoning, this history and the 'causal revolution' is thoroughly explored <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. In Pearl's causal calculus, the conclusion of causality relies (in part) on assumptions provided by the model-maker, for example that relevant mediator and confounder variables have been properly identified. While this makes some uncomfortable, such as those with an aesthetic preference for scientific conclusions which any rational observer would accept (given a number of axioms), it makes one thing explicit: causality is a property of a model - a point detailed in Norton's <a href="https://www.pitt.edu/~jdnorton/papers/003004.pdf">'Causation as Folk Science'</a>. 
+As a basic need, "why" shows up across formal disciplines - Aristotle provided a taxonomy of causes.  Today, undergraduates dutifully learn that correlation is not causation. Pearl's causal calculus provides a complete framework for drawing conclusions regarding causality (given some model assumptions, provided by the modeller; e.g. that mediator and confounder variables are known and properly included) <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>. This makes explicit the uncomfortable point that causality, as human's know it, is a property of a model, a point detailed in Norton's <a href="https://www.pitt.edu/~jdnorton/papers/003004.pdf">'Causation as Folk Science'</a>. 
 </p>
 
 <p>
-The principle concern of causal calculus is non-sequential decision making <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>, questions like 'does smoking cause cancer' or 'does this intervention improve this health outcome'. However, many decisions of daily life - whether we do something special for our loved ones, what we make for dinner, whether we go exercise - are sequential, where the action we take affects the world. The world, in turn, affects us and our propensity for certain actions. 
+The principle concern of causal calculus is decision making <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>, questions like 'does smoking cause cancer' or 'does this intervention improve this health outcome'. This has two major distinctions from causal reasoning in our daily lives: its formality is really only merited where reliability has absolute priority (e.g. science) and many decisions of daily life are sequential. In sequential decisions - whether to go to the gym, whether to get flowers for your partner - the action we take affects the state of the world or ourselves, in turn influencing our future decisions. 
 </p>
 
 <p>
-Consider a rational agent choosing actions to achieve a certain outcome through the use of an internal model, action -&gt; outcome. If I do this, then that happens; a sort of counterfactual exploration which is one theory of mind <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>. This forward model impacts the agent's actions, but has a causality which may be incomplete.
+Consider a rational agent choosing actions to achieve a certain outcome through an understanding that this action results in that outcome,; a sort of counterfactual exploration which is one theory of mind <sup><a id="fnr.3" class="footref" href="#fn.3">3</a></sup>. This forward model impacts the agent's actions, but has a causality which may be incomplete. Such an incomplete causal story leaves room for plausible stories which invert the causality - where the effect is presented as a cause. The self-fullfilling prophecy is a sort of causality inversion: instead of a certain future causing the prophecy, the prophecy brings about itself by influencing actions of today. Such causal inversion seems to enjoy a degree of popularity, typically as a minority or contrarian view. 
+</p>
+
+<div id="outline-container-org043cd8d" class="outline-2">
+<h2 id="org043cd8d">Moore's law</h2>
+<div class="outline-text-2" id="text-org043cd8d">
+<p>
+Moore's law, the empirical rule of thumb that in commercial semiconductor fabrication, the transistor count per chip doubles every two years. This observation, credited to Gordon Moore of Intel in 1965, was, at the time of its coinage, a model for predicting what computing power would be reasonable to expect in the future - helping software developers, consumers, and corporations plan their investments.
 </p>
 
 <p>
-An incomplete causal story leaves room for plausible stories which invert the causality - where the effect is presented as a cause. The self-fullfilling prophecy is a sort of causality inversion: instead of a certain future causing a prediction to be made (and, somehow, transported back in time), the prophecy becomes the cause of the future. Causality inversion seems to enjoy a degree of popularity, typically as a minority or contrarian view. 
-</p>
-
-<div id="outline-container-org693483a" class="outline-2">
-<h2 id="org693483a">Love</h2>
-<div class="outline-text-2" id="text-org693483a">
-<p>
-Typical model: Love -&gt; loving behavior
-The typical folk wisdom is that love causes loving actions, whereas the feelings we assosciate with love could also be productively viewed as resulting from loving actions <sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup>.  This presents the alternative view that feelings of love emerge from and are reinforced by loving actions - that we inhabit our expressions. 
+However, as many have noted, Moore's law does more than predict: it is also a benchmark, setting the industry tempo, driving increasing levels of R&amp;D and hardware investment in each subsequent cycle.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4321eca" class="outline-2">
-<h2 id="org4321eca">Eternal salvation</h2>
-<div class="outline-text-2" id="text-org4321eca">
+<div id="outline-container-org6b223d3" class="outline-2">
+<h2 id="org6b223d3">Love</h2>
+<div class="outline-text-2" id="text-org6b223d3">
 <p>
-Typical model: Good actions -&gt; eternal salvation
+The typical model is that love causes loving behavior. However, the feelings we assosciate with love could also be productively viewed as resulting from loving actions <sup><a id="fnr.4" class="footref" href="#fn.4">4</a></sup>.  This presents the alternative view that feelings of love emerge from and are reinforced by loving actions - that we inhabit our expressions. 
 </p>
+</div>
+</div>
 
+<div id="outline-container-orgee50f43" class="outline-2">
+<h2 id="orgee50f43">Eternal salvation</h2>
+<div class="outline-text-2" id="text-orgee50f43">
 <p>
-A common religious view of good actions and eternal salvation is that good actions cause eternal salvation. The Puritans, especially Calvinists, typically espouse a form of predestination: that one does not choose salvation; 'the privilege of choice is God's alone'. Good behavior <b>results</b> from being elected for salvation, but does not <b>cause</b> it.
+A prototypical religious view is that righteous actions cause eternal salvation. The Puritans, especially Calvinists, typically espouse a form of predestination: that one does not choose salvation; 'the privilege of choice is God's alone'. Good behavior <b>results</b> from being elected for salvation, but does not <b>cause</b> it.
 </p>
 
 <p>
 How does such a viewpoint affect the person who holds it? Someone contemplating an action which is, by their judgement, 'not good', and weighing this action with respect to the eternal salvation of their soul, it seems that predestination would lend a certain apathy, for their salvation is fixed. This seems to encourage a strong bifurcation in behavior: one who believes themselves destined for damnation has little reason to not act accordingly.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd39fbec" class="outline-2">
+<h2 id="orgd39fbec">Technology development</h2>
+<div class="outline-text-2" id="text-orgd39fbec">
+<p>
+Let us assume, for the sake of argument, that a technology is a means to reaching certain ends - making it easier or possible to cause certain effects. The creation of such technologies aims at facilitating this effect - that is, the deired effect is causing the technology development. 
+</p>
+
+<p>
+However, this is again an incomplete story. Existing technologies and methods are regularly pressed into new uses, and more fundamentally: setting the goal of new technologies is based on possible use cases. These competing frameworks are sometimes called basic (or curiosity-driven) research vs. application-driven research. The DARPA research model is a right-to-left method: look at what new use-cases fit their agency scope/objectives, then go 'shopping' in more basic research to find and foster supporting technologies.
+</p>
+
+<p>
+This joint development of technology and use is part of what makes research and development difficult. This difficulty is exacerbated by the overwhelming tendency of developers and engineers to see the technology (which is ultimately a means) as the goal. For us, the goal <b>is</b> to develop, e.g. a database with certain properties. However, this technological vision is quite often anchored to the first idea we had, or the standard methods. While division of roles is important, keeping the development anchored to the application goals allows flexiblity in the technical solution and keeps evaluation grounded.  
 </p>
 </div>
 </div>

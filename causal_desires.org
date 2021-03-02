@@ -3,32 +3,38 @@
 
 #+TITLE: Causal Desires
 
-#+HTML: <q> To model is human; to model causally, divine </q>
+#+HTML: <q> To model is human; causally, divine </q>
 
-"Why?" - the perennial question beloved by children, philosphers, journalists alike; echoing from schoolyard to courtroom. It belies a basic human desire: effect should have cause, preferably one compatible with our undestanding of the world.
+"Why?" is a question we can't help asking when we feel wronged, surprised, or just plain curious. Knowing 'why' speaks of understanding, the ability to predict when it would happen again and, if needed, change that. We hunger for sensible stories, where causes proceed predictable to effects.
 
-"Why" is, however, not an easy question to answer. Aristotle named four kinds of causes and explored their relations, among each other and with effect. Today, undergraduates dutifully learn that correlation is not causation. In Pearl's work on causal calculus and reasoning, this history and the 'causal revolution' is thoroughly explored [fn:1]. In Pearl's causal calculus, the conclusion of causality relies (in part) on assumptions provided by the model-maker, for example that relevant mediator and confounder variables have been properly identified. While this makes some uncomfortable, such as those with an aesthetic preference for scientific conclusions which any rational observer would accept (given a number of axioms), it makes one thing explicit: causality is a property of a model - a point detailed in Norton's [[https://www.pitt.edu/~jdnorton/papers/003004.pdf]['Causation as Folk Science']]. 
+As a basic need, "why" shows up across formal disciplines - Aristotle provided a taxonomy of causes.  Today, undergraduates dutifully learn that correlation is not causation. Pearl's causal calculus provides a complete framework for drawing conclusions regarding causality (given some model assumptions, provided by the modeller; e.g. that mediator and confounder variables are known and properly included) [fn:1]. This makes explicit the uncomfortable point that causality, as human's know it, is a property of a model, a point detailed in Norton's [[https://www.pitt.edu/~jdnorton/papers/003004.pdf]['Causation as Folk Science']]. 
 
-The principle concern of causal calculus is non-sequential decision making [fn:2], questions like 'does smoking cause cancer' or 'does this intervention improve this health outcome'. However, many decisions of daily life - whether we do something special for our loved ones, what we make for dinner, whether we go exercise - are sequential, where the action we take affects the world. The world, in turn, affects us and our propensity for certain actions. 
+The principle concern of causal calculus is decision making [fn:2], questions like 'does smoking cause cancer' or 'does this intervention improve this health outcome'. This has two major distinctions from causal reasoning in our daily lives: its formality is really only merited where reliability has absolute priority (e.g. science) and many decisions of daily life are sequential. In sequential decisions - whether to go to the gym, whether to get flowers for your partner - the action we take affects the state of the world or ourselves, in turn influencing our future decisions. 
 
-Consider a rational agent choosing actions to achieve a certain outcome through the use of an internal model, action -> outcome. If I do this, then that happens; a sort of counterfactual exploration which is one theory of mind [fn:4]. This forward model impacts the agent's actions, but has a causality which may be incomplete.
-
-An incomplete causal story leaves room for plausible stories which invert the causality - where the effect is presented as a cause. The self-fullfilling prophecy is a sort of causality inversion: instead of a certain future causing a prediction to be made (and, somehow, transported back in time), the prophecy becomes the cause of the future. Causality inversion seems to enjoy a degree of popularity, typically as a minority or contrarian view. 
+Consider a rational agent choosing actions to achieve a certain outcome through an understanding that this action results in that outcome,; a sort of counterfactual exploration which is one theory of mind [fn:4]. This forward model impacts the agent's actions, but has a causality which may be incomplete. Such an incomplete causal story leaves room for plausible stories which invert the causality - where the effect is presented as a cause. The self-fullfilling prophecy is a sort of causality inversion: instead of a certain future causing the prophecy, the prophecy brings about itself by influencing actions of today. Such causal inversion seems to enjoy a degree of popularity, typically as a minority or contrarian view. 
 
 [fn:1] Pearl and Mackenzie, 'The Book of Why: The New Science of Cause and Effect', a number of shorter introductions [[https://www.inference.vc/untitled/][available]].
 [fn:2] Although the causal graph can be extended to consider a time series, this is decidedly not the focus of the text. 
 [fn:4] This theory of decision making is not the only one; see, e.g. [[https://arxiv.org/abs/1901.01291]['On the Utility of Model Learning in HRI']] by Choudhury, et al.
 
+** Moore's law
+Moore's law, the empirical rule of thumb that in commercial semiconductor fabrication, the transistor count per chip doubles every two years. This observation, credited to Gordon Moore of Intel in 1965, was, at the time of its coinage, a model for predicting what computing power would be reasonable to expect in the future - helping software developers, consumers, and corporations plan their investments.
+
+However, as many have noted, Moore's law does more than predict: it is also a benchmark, setting the industry tempo, driving increasing levels of R&D and hardware investment in each subsequent cycle.
+ 
 ** Love
-Typical model: Love -> loving behavior
-The typical folk wisdom is that love causes loving actions, whereas the feelings we assosciate with love could also be productively viewed as resulting from loving actions [fn:3].  This presents the alternative view that feelings of love emerge from and are reinforced by loving actions - that we inhabit our expressions. 
+The typical model is that love causes loving behavior. However, the feelings we assosciate with love could also be productively viewed as resulting from loving actions [fn:3].  This presents the alternative view that feelings of love emerge from and are reinforced by loving actions - that we inhabit our expressions. 
 
 [fn:3] Nussbaum, "Love and the Individual: Romantic Rightness and Platonic Aspiration"
 
 ** Eternal salvation
-Typical model: Good actions -> eternal salvation
-
-A common religious view of good actions and eternal salvation is that good actions cause eternal salvation. The Puritans, especially Calvinists, typically espouse a form of predestination: that one does not choose salvation; 'the privilege of choice is God's alone'. Good behavior *results* from being elected for salvation, but does not *cause* it.
+A prototypical religious view is that righteous actions cause eternal salvation. The Puritans, especially Calvinists, typically espouse a form of predestination: that one does not choose salvation; 'the privilege of choice is God's alone'. Good behavior *results* from being elected for salvation, but does not *cause* it.
 
 How does such a viewpoint affect the person who holds it? Someone contemplating an action which is, by their judgement, 'not good', and weighing this action with respect to the eternal salvation of their soul, it seems that predestination would lend a certain apathy, for their salvation is fixed. This seems to encourage a strong bifurcation in behavior: one who believes themselves destined for damnation has little reason to not act accordingly.
 
+** Technology development
+Let us assume, for the sake of argument, that a technology is a means to reaching certain ends - making it easier or possible to cause certain effects. The creation of such technologies aims at facilitating this effect - that is, the deired effect is causing the technology development. 
+
+However, this is again an incomplete story. Existing technologies and methods are regularly pressed into new uses, and more fundamentally: setting the goal of new technologies is based on possible use cases. These competing frameworks are sometimes called basic (or curiosity-driven) research vs. application-driven research. The DARPA research model is a right-to-left method: look at what new use-cases fit their agency scope/objectives, then go 'shopping' in more basic research to find and foster supporting technologies.
+
+This joint development of technology and use is part of what makes research and development difficult. This difficulty is exacerbated by the overwhelming tendency of developers and engineers to see the technology (which is ultimately a means) as the goal. For us, the goal *is* to develop, e.g. a database with certain properties. However, this technological vision is quite often anchored to the first idea we had, or the standard methods. While division of roles is important, keeping the development anchored to the application goals allows flexiblity in the technical solution and keeps evaluation grounded.  
