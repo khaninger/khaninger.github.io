@@ -1,0 +1,25 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css">
+#+OPTIONS: num:nil toc:nil html-postamble:nil
+
+#+TITLE: Kuhn's Paradigms in Technological Innovation
+
+A paradigm frames our experience of the world. A scientific paradigm structures which questions to ask, the interpretation of data, and the allocation of resources. Thomas Kuhn in 'The Structure of Scientific Revolutions' is largely credited with coining this modern usage of paradigm, providing a sweeping analysis of their lifecycle. Key for Kuhn is that science practice is shaped by a paradigm, until a paradigm shift, which reframes existing (and new) data and often provides a new set of questions.  While so accepted in science that it's taken for granted, what do paradigms look like in technology?
+
+The easiest answer is to pull from the comparably-beloved text in innovation, Clayton Christensen's 'The Innovator's Dilemma'.  Here, innovations are classified as 'sustaining' which slightly improve an existing technology, and 'disruptive', a discontinuous change in capability and performance.  Christensen's core question - why are established firms not good at disruptive innovation - is partly answered by technology-specific factors, namely that established customers pull the resource allocation of technology companies towards existing use-cases, limiting investment in potential disruptive technologies by risk-adverse middle managers [fn:1].  
+
+That the shape of these processes is so similar -- incremental and creeping, then a discontinuous change -- is not a priori obvious given how different science and engineering are. However, at the core are decisions on resource allocation (at an individual and organizational level) and how intensive it is to do certain kinds of work. This comparison can be drawn out:
+
+#+ATTR_HTML: :align center
+| What                               | Kuhn's paradigm                        | Christensen's innovation        |
+|------------------------------------+----------------------------------------+---------------------------------|
+| Resource allocation (organization) | What proposals to fund                 | What dev projects to fund       |
+| Resource allocation (individual)   | What experiments to do                 | Where to invest time in project |
+| Evaluation                         | Interpreting results, analysis methods | Performance metrics             |
+| Inertia (organizational)           | Peer review                            | Existing customers              |
+| Inertia (individual)               | Training, own previous work            | Existing development            |
+
+In technological R&D, the performance metric is critical for both internal evaluation and external communication. Comparing different designs, parameters, or solution concepts is most scalable and communicable when the performance is quantified. This metric is itself paradigmatic - tied to the current use-cases, customers, or research program. In robotics, the speed and accuracy of commercial robots was pushed up until the 2010s, when the soft robotics program was able to convince enough people that these criteria are not the limiting factor for many robotics applications (especially contact-rich tasks). 
+
+The implicit question in both these works seems to be how can we support and accelerate these fundamental, disruptive innovations?  But there is a certain poetic beauty in the calcifying, inertial effects of a paradigm. If a person or organization seeks to change the world, and through great luck, opportunity, and effort, succeeds in establishing a new paradigm, this new paradigm is just one step - soon becoming the outdated relic, target of ambitious innovators.
+
+[fn:1] Christensen, writing for managers, seems to pass over an obvious and practical factor: existing development base (with technical debt), with corresponding organizational inertia (development pipeline for the existing technology). 

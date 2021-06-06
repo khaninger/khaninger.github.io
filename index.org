@@ -21,6 +21,8 @@ I co-founded [[https://abilityhacks.org][AbilityHacks]] and [[https://enabletech
 
 [[./causal_desires.html][Causal Desires]] [17.08.2020]
 
+[[./paradigms.html][Kuhn's paradigms in innovation]] [06.06.2021]
+
 ** Miscellaneous Projects
 
 - Dual Leslie :: The Leslie speaker realizes a sort of tremelo effect mechanically via a downwards-facing speaker and a rotating baffle which directionally projects this sound. I was interested in the effect of having two such speakers at different speeds (and possibly, different spatial locations), and built two simple ones to test. The rotational speeds of each drum and the relative volume of each can be controlled via knobs. 
