@@ -1,3 +1,5 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css">
+
 #+TITLE:Robotics business models
 
 This essay gives a quick survey of common business models in robotics, then wildly speculates about future business models.  
