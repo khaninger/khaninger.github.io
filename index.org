@@ -15,13 +15,15 @@ I co-founded [[https://abilityhacks.org][AbilityHacks]] and [[https://enabletech
 
 ** Publications
 
-[[https://scholar.google.com/citations?hl=en&user=FyJgrvYAAAAJ&view_op=list_works&sortby=pubdate][via Google Scholar
-]]
+[[https://scholar.google.com/citations?hl=en&user=FyJgrvYAAAAJ&view_op=list_works&sortby=pubdate][via Google Scholar]]
+
 ** Blog
 
-[[./causal_desires.html][Causal Desires]] [17.08.2020]
+[[./robot_business_models.html][Business models in robotics]] [01.05.2024]
 
 [[./paradigms.html][Kuhn's paradigms in innovation]] [06.06.2021]
+
+[[./causal_desires.html][Causal Desires]] [17.08.2020]
 
 ** Miscellaneous Projects
 

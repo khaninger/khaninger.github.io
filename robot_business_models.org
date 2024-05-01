@@ -1,0 +1,83 @@
+#+TITLE:Robotics business models
+
+This essay gives a quick survey of common business models in robotics, then wildly speculates about future business models.  
+
+* Robot hardware
+** Robots as equiptment
+Classically, robot manufacturers built hardware then sold it.
+
+While the first programmable industrial robot was installed and programmed by the inventor's (Devol and Engelberger) company, at some point after this, robot production and integration were split out to different business entities. Today, the typical business relationship is that integrators -- typically, smaller companies with geographically local customers -- make a contract with an end-user then design, install, program, and validate the robot cell. The integrator can then offer long-term support, updates, or maintnence on this cell, key to reach the reliability expected in industry. Integrators will typically work with just one (or a handful) of robot manufacturers, building know-how and often some tooling, e.g. to help program the robots.
+
+Some robot manufacturers today (e.g. KUKA) have advanced integrators in-house, albeit as separate business units. This allows the company to reach higher-touch customers who have applications which require e.g. customization or a new interface. Putting advanced integrators and robot developers in one organization supports any needed robot development (e.g. new control interfaces).
+
+This business model is built for classical factories: the integrator provides a reliable solution for the specific problem, and a backstop for possible problems via support. However, when the product changes, the integrator needs to be called out and the process carried out again.
+
+** Robots as a platform
+As robots got safer and easier to program, a push for 'democratization' began. This goal is to allow end-users (e.g. engineers or operators on the factory floor) to program the robot directly, saving the time/cost of hiring an integrator while providing a path to upskilling operators. Robotics manufacturers positioned for this (Universal Robots, Franka Emika, Agile Robots) focus on polished, easy-to-use interfaces and safer robot hardware.
+
+Typically these robots can be used in applications which have less stringent requirements on accuracy, speed, and reliability. This change in requirements is required from the hardware -- robots which are safer are typically slower, less accurate, and sometimes less reliable. Additionally, typically only simpler tasks with point-to-point motion can be easily programmed in this way, complex parameterized or sensor-based motions may be more difficult.
+
+How is a platform different from robots-as-hardware?
+- Interface: The manufacturer may provide an easy programming interface, e.g. moving the robot by hand to teach positions, a drag-n-drop programming interface to build logic, etc. 
+- Hardware:  When additional hardware is required (linear axis, new gripper), the manufacturer may allow 3rd parties to offer integrated software modules which ease deployment. For example UR Caps install a program stub on the controller which runs in the background and exposes a higher-level API to the programming environment.
+- Software:  An app store could also be provided by the manufacturer, where functionalities or programs can be offered - e.g. a parameterized program for screwing or other complex operations.  Such programs could theoretically encapsulate common behaviors, and expose higher-level parameters so they can be easily instantiated by end-users, reducing the need for detailed robotics knowledge.
+
+This model typically aims at distributors, not integrators, as points of sale. The distributors can offer trainings to end-users on programming and maitenance. However, today, many of these robots are still sold via integrators. Theoretically this model can achieve higher flexibility - the programmers would be there on the factory floor. However, the degree of product change which happens today is strongly limited by general complexity in the assembly line, meaning this flexibility is not often used.
+
+** Robots as internal tools
+Robots can also be developed and deployed only as internal tools - the company provides some service (e.g. mowing lawns), and fulfills this service with either manual work or robots. A major benefit of this is supporting bootstrapping; a robotics company like Electric Sheep can acquire existing lawncare companies, then improve their efficiency over time with robotics.  This is helpful if you need time to collect data for your robotics solution, and would support a fast iteration cycle which is closed around real customers.
+
+* Currently, no true application-level product or marketplace 
+Today, almost no end-users can go their friendly neighborhood robot store and directly buy a single product that solves their problem. A 'robotic solution' is a set of products, integrated with either on-site or purchased expertise, with application-specific parameterization and programming. 
+
+Is this bad? Sometimes. Automation has high barriers to entry, preventing companies with less capital or in-house expertise from getting the efficiency gains.  However, if the technical barriers (difficulty in integration, programming) were magically removed, the customer will still need good expectations about how to fit the robot into their production environment - a kind of expertise which seems necessary regardless how 'good' the robots are. 
+
+So, there's no real robotics product. But it gets worse: robotics does not even have an application-level marketplace where competitive bids/offers clear in arms-length transactions. You could imagine a website where a customer uploads a description of their problem, and companies put in offers for a solution. But there's a few reasons we don't see this:
+- Formulating the requirements typically requires on-site expertise
+- Formulating a solution which meets requirements takes too much time, typically needs interaction with the potential customer
+- Geographically limited due to need for on-site delivery & integration
+So, even getting an offer for a robotic solution typically means a subject-matter expert has to come by, look at your problem, and make a quote based on this. 
+  
+* [complete speculation] What if you could just buy a robot that solves your problem? 
+Many people are trying to develop robots with general skills - where you can have a true robotic product which can be deployed for a range of applications.  A kitchen robot, which could put away dishes in any kitchen.  A packing robot, which could pick any items in a warehouse and place them in boxes.
+
+This would indeed be a disruptive jump, allowing true robot products which are low-touch: no need for integrators _or_ trained local staff. As a concrete example,  many starutps today are developing general warehouse robots: doing picking, sorting, and even packing of 'arbitrary' products. 
+
+** What would be needed?
+- Applications which either do not have a lot of edge cases, or where those edge cases are not critical. Covering 90% of cases is easy, with increasing difficulty to increase coverage.  While thinkable that these robots could improve over time with experience, that requires broad deployment, and getting broad deployment means you need a use-case where a lower success rate is acceptable. For example, putting dishes away might be OK with 90% success, some customers might still be happy to do 10% by hand, appreciating that the bulk of the work is done.  However, convincing factory engineers to deploy a 90% successful robot in a line is another story.
+- Customers willing to take the risk of having less support.  If this is an arms-length sale, a warranty could be included, but the entire goal is to reduce the need for individual support. 
+- Robot hardware which:
+  - is sufficiently abstracted, such that feasibility issues (joint limits, singularity, gripper malfunction, etc) are rare.
+  - is networked, at least to pull updates, probably also to push local data.
+- It probably needs vision. It is difficult to imagine handling task variation by a lower-dimensional sensor. 
+** What could it enable?
+- Flywheel effects: the product improves from the range of data it has collected, market leaders would be able to offer better products.
+- Service or rental models: if deployment is so easy, it would be possible to rent the robot behavior for shorter periods of time (e.g. peak season). Whether this is compatible with a way of allocating hardware remains to be seen. This would have a variety of knock-on effects: 
+  - Automation penetration by smaller customers: today, smaller customers are typically priced out by the up-front capital required to get a solution. If they can click and deploy, up-front costs are reduced.
+  - Flexible production, where robots are re-allocated much more easily.  This would require a range of robot skills to be products though.
+- Robots in homes would be technically feasible, but I just don't see the economics of this working out for anyone outside the richest 1%, who would probably prefer the reliability / comfort / non-disruption of traditional 'staff'.  
+** What other players could there be in the ecosystem?
+This would be a fundamentally different ecosystem, with different players. What are some possible new players in the ecosystem?
+*** Skill providers in partnership with robot manufacturers
+As more of the value-add comes from the software, it's likely that these players will try to position themselves in a more central way. They might do this by making partnerships with robot manufacturers, so that a ready product can be purchased with everything already integrated. This is an attractive value proposition for the end-user, but technically speaking a tighter integration between vision and robot is probably not needed (it's mostly point-to-point moves, existing robot interfaces could be used).  Additionally, partnering with manufacturers provides brand, customer access, and at least the apperance of reliability. 
+*** Skill providers as 3rd parties
+A skill provider which provides an easily-integrated module compatible with several hardware platforms. This approach would need easy integration, but is even today possible with methods like the UR Caps or UR+ program. 
+*** Data/Simulation providers
+If data is key enabler, it'll probably serve as a moat for established players - curated and protected. But could someone lower barriers to entry by offering a well-curated dataset? In other machine learning areas, dataset curation is done as a kind of community service, but robot data is both more expensive and harder to find in the wild. For believers in simulation, there are services in constructing synthetic datasets with good diversity for pre-training vision systems, such as the NVIDIA Isaac platform.
+*** Dataviz and Dashboard providers
+These general robots will (very very very likely) need large amounts of data to train, adapt, and operate. Providing the 'picks and shovels' tools that allow this data to be collected, managed, and visualized, is critical. Companies like Foxglove provide infrastructure and interfaces which support these processes.
+
+* Case studies on new technologies
+Today, no one is close to offering direct-to-end-user robotic products for manipulation. However, some companies are offering more complex planning products, with a variety of business models.
+
+** Online collision avoidance
+The ability to re-plan the robot motion online, to avoid collision with a human/other robot, or adapt to a change in the goal poisition, enables many open-cell and multi-robot applications.  Companies like Realtime Robotics have products which enable this.  This requires the ability to stream motion commands to the robot (not just send a goal position), thus it benefits with a lower-level integration in the robot controller.  Realtime Robotics has formed a partnership with Yaskawa, enabling this.
+
+** Picking novel objects
+Improved image processing allows camera-based picking of objects, including the picking of novel objects.  Though typically with a lower accuracy, this technology is well-suited to applications with low accuracy requirements and high variance, such as good sorting or bin-picking in warehouses. Here, Covariant AI provides the vision system, and has formed partnerships with industrial players (Knapp, ABB) to provide integrated solutions in pilot cases. As these tasks are often point-to-point motions, the low-level motion streaming is not required, making integration with a new robot easier. 
+
+** Teaching by demonstration for variation in workpiece position
+For fine assembly operations such as inserting a plug, it often desired that the workpiece position can vary in position, so it can be free-standing on a conveyor or table, rather than in a fixture. A camera can correct for relative translations of a workpiece, but this requires application-specific sensing of features or object pose. A huge swath of technologies can address this, but require some local data or at least CAD. This may require a lower-level integration with the robot, such as motion streaming for more complex trajectories. However, some providers such as Micropsi industries, realize this through standard interfaces with a limited selection of robots, and can sell their system as an independent hardware module.
+
+** Variation in assembly operation
+Similarly, some assembly operations (insertion of a plug, screwing) have very similar motion profiles, success metrics, or visual features, but have variation in form or material which typically requires application-specific tuning. New data-based approaches seek to develop camera- or force-based skills which are capable of generalizing to new applications based on a few trial runs. If successful, would truly enable the distributor model for more complex tasks. Companies like Intrinsic are developing this, but it's still unclear how this will come on the market.

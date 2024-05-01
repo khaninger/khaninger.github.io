@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-05-01 Wed 04:56 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Robotics business models</title>
+<meta name="author" content="IPK559L" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Robotics business models</h1>
+<p>
+This essay gives a quick survey of common business models in robotics, then wildly speculates about future business models.  
+</p>
+
+<div id="outline-container-orgdd12cbc" class="outline-2">
+<h2 id="orgdd12cbc"><span class="section-number-2">1.</span> Robot hardware</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgea09cd2" class="outline-3">
+<h3 id="orgea09cd2"><span class="section-number-3">1.1.</span> Robots as equiptment</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Classically, robot manufacturers built hardware then sold it.
+</p>
+
+<p>
+While the first programmable industrial robot was installed and programmed by the inventor's (Devol and Engelberger) company, at some point after this, robot production and integration were split out to different business entities. Today, the typical business relationship is that integrators &#x2013; typically, smaller companies with geographically local customers &#x2013; make a contract with an end-user then design, install, program, and validate the robot cell. The integrator can then offer long-term support, updates, or maintnence on this cell, key to reach the reliability expected in industry. Integrators will typically work with just one (or a handful) of robot manufacturers, building know-how and often some tooling, e.g. to help program the robots.
+</p>
+
+<p>
+Some robot manufacturers today (e.g. KUKA) have advanced integrators in-house, albeit as separate business units. This allows the company to reach higher-touch customers who have applications which require e.g. customization or a new interface. Putting advanced integrators and robot developers in one organization supports any needed robot development (e.g. new control interfaces).
+</p>
+
+<p>
+This business model is built for classical factories: the integrator provides a reliable solution for the specific problem, and a backstop for possible problems via support. However, when the product changes, the integrator needs to be called out and the process carried out again.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9a66abf" class="outline-3">
+<h3 id="org9a66abf"><span class="section-number-3">1.2.</span> Robots as a platform</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+As robots got safer and easier to program, a push for 'democratization' began. This goal is to allow end-users (e.g. engineers or operators on the factory floor) to program the robot directly, saving the time/cost of hiring an integrator while providing a path to upskilling operators. Robotics manufacturers positioned for this (Universal Robots, Franka Emika, Agile Robots) focus on polished, easy-to-use interfaces and safer robot hardware.
+</p>
+
+<p>
+Typically these robots can be used in applications which have less stringent requirements on accuracy, speed, and reliability. This change in requirements is required from the hardware &#x2013; robots which are safer are typically slower, less accurate, and sometimes less reliable. Additionally, typically only simpler tasks with point-to-point motion can be easily programmed in this way, complex parameterized or sensor-based motions may be more difficult.
+</p>
+
+<p>
+How is a platform different from robots-as-hardware?
+</p>
+<ul class="org-ul">
+<li>Interface: The manufacturer may provide an easy programming interface, e.g. moving the robot by hand to teach positions, a drag-n-drop programming interface to build logic, etc.</li>
+<li>Hardware:  When additional hardware is required (linear axis, new gripper), the manufacturer may allow 3rd parties to offer integrated software modules which ease deployment. For example UR Caps install a program stub on the controller which runs in the background and exposes a higher-level API to the programming environment.</li>
+<li>Software:  An app store could also be provided by the manufacturer, where functionalities or programs can be offered - e.g. a parameterized program for screwing or other complex operations.  Such programs could theoretically encapsulate common behaviors, and expose higher-level parameters so they can be easily instantiated by end-users, reducing the need for detailed robotics knowledge.</li>
+</ul>
+
+<p>
+This model typically aims at distributors, not integrators, as points of sale. The distributors can offer trainings to end-users on programming and maitenance. However, today, many of these robots are still sold via integrators. Theoretically this model can achieve higher flexibility - the programmers would be there on the factory floor. However, the degree of product change which happens today is strongly limited by general complexity in the assembly line, meaning this flexibility is not often used.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org808d60b" class="outline-3">
+<h3 id="org808d60b"><span class="section-number-3">1.3.</span> Robots as internal tools</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Robots can also be developed and deployed only as internal tools - the company provides some service (e.g. mowing lawns), and fulfills this service with either manual work or robots. A major benefit of this is supporting bootstrapping; a robotics company like Electric Sheep can acquire existing lawncare companies, then improve their efficiency over time with robotics.  This is helpful if you need time to collect data for your robotics solution, and would support a fast iteration cycle which is closed around real customers.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3ff8020" class="outline-2">
+<h2 id="org3ff8020"><span class="section-number-2">2.</span> Currently, no true application-level product or marketplace</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Today, almost no end-users can go their friendly neighborhood robot store and directly buy a single product that solves their problem. A 'robotic solution' is a set of products, integrated with either on-site or purchased expertise, with application-specific parameterization and programming. 
+</p>
+
+<p>
+Is this bad? Sometimes. Automation has high barriers to entry, preventing companies with less capital or in-house expertise from getting the efficiency gains.  However, if the technical barriers (difficulty in integration, programming) were magically removed, the customer will still need good expectations about how to fit the robot into their production environment - a kind of expertise which seems necessary regardless how 'good' the robots are. 
+</p>
+
+<p>
+So, there's no real robotics product. But it gets worse: robotics does not even have an application-level marketplace where competitive bids/offers clear in arms-length transactions. You could imagine a website where a customer uploads a description of their problem, and companies put in offers for a solution. But there's a few reasons we don't see this:
+</p>
+<ul class="org-ul">
+<li>Formulating the requirements typically requires on-site expertise</li>
+<li>Formulating a solution which meets requirements takes too much time, typically needs interaction with the potential customer</li>
+<li>Geographically limited due to need for on-site delivery &amp; integration</li>
+</ul>
+<p>
+So, even getting an offer for a robotic solution typically means a subject-matter expert has to come by, look at your problem, and make a quote based on this. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org68c9800" class="outline-2">
+<h2 id="org68c9800"><span class="section-number-2">3.</span> [complete speculation] What if you could just buy a robot that solves your problem?</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Many people are trying to develop robots with general skills - where you can have a true robotic product which can be deployed for a range of applications.  A kitchen robot, which could put away dishes in any kitchen.  A packing robot, which could pick any items in a warehouse and place them in boxes.
+</p>
+
+<p>
+This would indeed be a disruptive jump, allowing true robot products which are low-touch: no need for integrators <span class="underline">or</span> trained local staff. As a concrete example,  many starutps today are developing general warehouse robots: doing picking, sorting, and even packing of 'arbitrary' products. 
+</p>
+</div>
+
+<div id="outline-container-orgcdc1ffa" class="outline-3">
+<h3 id="orgcdc1ffa"><span class="section-number-3">3.1.</span> What would be needed?</h3>
+<div class="outline-text-3" id="text-3-1">
+<ul class="org-ul">
+<li>Applications which either do not have a lot of edge cases, or where those edge cases are not critical. Covering 90% of cases is easy, with increasing difficulty to increase coverage.  While thinkable that these robots could improve over time with experience, that requires broad deployment, and getting broad deployment means you need a use-case where a lower success rate is acceptable. For example, putting dishes away might be OK with 90% success, some customers might still be happy to do 10% by hand, appreciating that the bulk of the work is done.  However, convincing factory engineers to deploy a 90% successful robot in a line is another story.</li>
+<li>Customers willing to take the risk of having less support.  If this is an arms-length sale, a warranty could be included, but the entire goal is to reduce the need for individual support.</li>
+<li>Robot hardware which:
+<ul class="org-ul">
+<li>is sufficiently abstracted, such that feasibility issues (joint limits, singularity, gripper malfunction, etc) are rare.</li>
+<li>is networked, at least to pull updates, probably also to push local data.</li>
+</ul></li>
+<li>It probably needs vision. It is difficult to imagine handling task variation by a lower-dimensional sensor.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org143cfe0" class="outline-3">
+<h3 id="org143cfe0"><span class="section-number-3">3.2.</span> What could it enable?</h3>
+<div class="outline-text-3" id="text-3-2">
+<ul class="org-ul">
+<li>Flywheel effects: the product improves from the range of data it has collected, market leaders would be able to offer better products.</li>
+<li>Service or rental models: if deployment is so easy, it would be possible to rent the robot behavior for shorter periods of time (e.g. peak season). Whether this is compatible with a way of allocating hardware remains to be seen. This would have a variety of knock-on effects: 
+<ul class="org-ul">
+<li>Automation penetration by smaller customers: today, smaller customers are typically priced out by the up-front capital required to get a solution. If they can click and deploy, up-front costs are reduced.</li>
+<li>Flexible production, where robots are re-allocated much more easily.  This would require a range of robot skills to be products though.</li>
+</ul></li>
+<li>Robots in homes would be technically feasible, but I just don't see the economics of this working out for anyone outside the richest 1%, who would probably prefer the reliability / comfort / non-disruption of traditional 'staff'.</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org9355df2" class="outline-3">
+<h3 id="org9355df2"><span class="section-number-3">3.3.</span> What other players could there be in the ecosystem?</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+This would be a fundamentally different ecosystem, with different players. What are some possible new players in the ecosystem?
+</p>
+</div>
+<div id="outline-container-org00daa18" class="outline-4">
+<h4 id="org00daa18">Skill providers in partnership with robot manufacturers</h4>
+<div class="outline-text-4" id="text-org00daa18">
+<p>
+As more of the value-add comes from the software, it's likely that these players will try to position themselves in a more central way. They might do this by making partnerships with robot manufacturers, so that a ready product can be purchased with everything already integrated. This is an attractive value proposition for the end-user, but technically speaking a tighter integration between vision and robot is probably not needed (it's mostly point-to-point moves, existing robot interfaces could be used).  Additionally, partnering with manufacturers provides brand, customer access, and at least the apperance of reliability. 
+</p>
+</div>
+</div>
+<div id="outline-container-org4000249" class="outline-4">
+<h4 id="org4000249">Skill providers as 3rd parties</h4>
+<div class="outline-text-4" id="text-org4000249">
+<p>
+A skill provider which provides an easily-integrated module compatible with several hardware platforms. This approach would need easy integration, but is even today possible with methods like the UR Caps or UR+ program. 
+</p>
+</div>
+</div>
+<div id="outline-container-org884cc25" class="outline-4">
+<h4 id="org884cc25">Data/Simulation providers</h4>
+<div class="outline-text-4" id="text-org884cc25">
+<p>
+If data is key enabler, it'll probably serve as a moat for established players - curated and protected. But could someone lower barriers to entry by offering a well-curated dataset? In other machine learning areas, dataset curation is done as a kind of community service, but robot data is both more expensive and harder to find in the wild. For believers in simulation, there are services in constructing synthetic datasets with good diversity for pre-training vision systems, such as the NVIDIA Isaac platform.
+</p>
+</div>
+</div>
+<div id="outline-container-orgd007f67" class="outline-4">
+<h4 id="orgd007f67">Dataviz and Dashboard providers</h4>
+<div class="outline-text-4" id="text-orgd007f67">
+<p>
+These general robots will (very very very likely) need large amounts of data to train, adapt, and operate. Providing the 'picks and shovels' tools that allow this data to be collected, managed, and visualized, is critical. Companies like Foxglove provide infrastructure and interfaces which support these processes.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga985306" class="outline-2">
+<h2 id="orga985306"><span class="section-number-2">4.</span> Case studies on new technologies</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Today, no one is close to offering direct-to-end-user robotic products for manipulation. However, some companies are offering more complex planning products, with a variety of business models.
+</p>
+</div>
+
+<div id="outline-container-orgda42010" class="outline-3">
+<h3 id="orgda42010"><span class="section-number-3">4.1.</span> Online collision avoidance</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+The ability to re-plan the robot motion online, to avoid collision with a human/other robot, or adapt to a change in the goal poisition, enables many open-cell and multi-robot applications.  Companies like Realtime Robotics have products which enable this.  This requires the ability to stream motion commands to the robot (not just send a goal position), thus it benefits with a lower-level integration in the robot controller.  Realtime Robotics has formed a partnership with Yaskawa, enabling this.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8649e3e" class="outline-3">
+<h3 id="org8649e3e"><span class="section-number-3">4.2.</span> Picking novel objects</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Improved image processing allows camera-based picking of objects, including the picking of novel objects.  Though typically with a lower accuracy, this technology is well-suited to applications with low accuracy requirements and high variance, such as good sorting or bin-picking in warehouses. Here, Covariant AI provides the vision system, and has formed partnerships with industrial players (Knapp, ABB) to provide integrated solutions in pilot cases. As these tasks are often point-to-point motions, the low-level motion streaming is not required, making integration with a new robot easier. 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org51ae14b" class="outline-3">
+<h3 id="org51ae14b"><span class="section-number-3">4.3.</span> Teaching by demonstration for variation in workpiece position</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+For fine assembly operations such as inserting a plug, it often desired that the workpiece position can vary in position, so it can be free-standing on a conveyor or table, rather than in a fixture. A camera can correct for relative translations of a workpiece, but this requires application-specific sensing of features or object pose. A huge swath of technologies can address this, but require some local data or at least CAD. This may require a lower-level integration with the robot, such as motion streaming for more complex trajectories. However, some providers such as Micropsi industries, realize this through standard interfaces with a limited selection of robots, and can sell their system as an independent hardware module.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8c6a4a2" class="outline-3">
+<h3 id="org8c6a4a2"><span class="section-number-3">4.4.</span> Variation in assembly operation</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+Similarly, some assembly operations (insertion of a plug, screwing) have very similar motion profiles, success metrics, or visual features, but have variation in form or material which typically requires application-specific tuning. New data-based approaches seek to develop camera- or force-based skills which are capable of generalizing to new applications based on a few trial runs. If successful, would truly enable the distributor model for more complex tasks. Companies like Intrinsic are developing this, but it's still unclear how this will come on the market.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: IPK559L</p>
+<p class="date">Created: 2024-05-01 Wed 04:56</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
